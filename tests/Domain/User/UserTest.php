@@ -32,8 +32,8 @@ class UserTest extends TestCase
 
         $this->assertEquals($id, $user->getId());
         $this->assertEquals($username, $user->getUsername());
-        $this->assertEquals($firstName, $user->getFirstName());
-        $this->assertEquals($lastName, $user->getLastName());
+        $this->assertEquals($firstName, $user->getFirstname());
+        $this->assertEquals($lastName, $user->getLastname());
     }
 
     /**

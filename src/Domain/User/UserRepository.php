@@ -5,10 +5,17 @@ namespace App\Domain\User;
 
 interface UserRepository
 {
+
+    /**
+     * @param array $user
+     * @return mixed
+     */
+    public function createUser(array $user);
+
     /**
      * @return User[]
      */
-    public function findAll(): array;
+    public function findAllUsers(): array;
 
     /**
      * @param int $id

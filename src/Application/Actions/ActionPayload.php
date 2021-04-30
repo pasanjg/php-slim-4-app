@@ -68,6 +68,7 @@ class ActionPayload implements JsonSerializable
     {
         $payload = [
             'statusCode' => $this->statusCode,
+            'count' => count($this->data),
         ];
 
         if ($this->data !== null) {
